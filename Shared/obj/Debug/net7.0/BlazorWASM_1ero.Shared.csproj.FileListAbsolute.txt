@@ -1,0 +1,11 @@
+C:\BlazorWASM\BlazorWASM_1ero\Shared\bin\Debug\net7.0\BlazorWASM_1ero.Shared.deps.json
+C:\BlazorWASM\BlazorWASM_1ero\Shared\bin\Debug\net7.0\BlazorWASM_1ero.Shared.dll
+C:\BlazorWASM\BlazorWASM_1ero\Shared\bin\Debug\net7.0\BlazorWASM_1ero.Shared.pdb
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\BlazorWASM_1ero.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\BlazorWASM_1ero.Shared.AssemblyInfoInputs.cache
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\BlazorWASM_1ero.Shared.AssemblyInfo.cs
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\BlazorWASM_1ero.Shared.csproj.CoreCompileInputs.cache
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\BlazorWASM_1ero.Shared.dll
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\refint\BlazorWASM_1ero.Shared.dll
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\BlazorWASM_1ero.Shared.pdb
+C:\BlazorWASM\BlazorWASM_1ero\Shared\obj\Debug\net7.0\ref\BlazorWASM_1ero.Shared.dll

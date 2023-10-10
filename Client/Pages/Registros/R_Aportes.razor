@@ -1,0 +1,86 @@
+﻿@page "/RegistroAporte";
+@page "/RegistroAporte/{AporteId:int}";
+
+@inject NotificationService notificationService;
+
+<EditForm Model="aportes" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+    <div class="card">
+        <div class="card-header">
+            <h1>Registro Aporte</h1>
+        </div>
+        <div class="card-body">
+            <label>Aporte ID:</label>
+            <div class="input-group">
+                <InputNumber @bind-Value="aportes.AporteId" class="id-input"></InputNumber>
+                <button type="button" class="btn btn-dark oi oi-magnifying-glass" @onclick="Buscar"></button>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>Fecha:</label>
+                    <InputDate @bind-Value="aportes.Fecha" class="form-control"></InputDate>
+                    <ValidationMessage For="@(() => aportes.Fecha)" />
+                </div>
+                <div class="col-md-6">
+                    <label>Persona:</label>
+                    <InputText @bind-Value="aportes.Persona" class="form-control"></InputText>
+                    <ValidationMessage For="@(() => aportes.Persona)" />
+                </div>
+                <div class="col-md-6">
+                    <label>Observaci&oacute;n:</label>
+                    <InputText @bind-Value="aportes.Observación" class="form-control"></InputText>
+                    <ValidationMessage For="@(() => aportes.Observación)" />
+                </div>
+                <div class="col-md-6">
+                    <label>Monto:</label>
+                    <InputNumber @bind-Value="aportes.Monto" class="form-control"></InputNumber>
+                    <ValidationMessage For="@(() => aportes.Monto)" />
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-primary" @onclick="Nuevo">Nuevo <i class="oi oi-file" /></button>
+            <button class="btn btn-success">Guardar <i class="oi oi-document" /></button>
+            <button type="button" class="btn btn-danger" @onclick="Eliminar">Eliminar <i class="oi oi-trash" /></button>
+        </div>
+    </div>
+</EditForm>
+
+@code
+{
+    [Parameter]
+    public int AporteId { get; set; }
+
+    public Aportes aportes { get; set; } = new Aportes();
+
+    protected override void OnInitialized()
+    {
+        if (AporteId > 0)
+        {
+            aportes.AporteId = AporteId;
+            Buscar();
+        }
+    }
+
+    public void Buscar()
+    {
+
+    }
+
+    public void Nuevo()
+    {
+        this.aportes = new Aportes();
+    }
+
+
+    public void Guardar()
+    {
+
+    }
+
+    public void Eliminar()
+    {
+
+    }
+
+}
